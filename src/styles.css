@@ -197,3 +197,140 @@
   .player-room-info{gap:5px}
   .player-room-info div{padding:7px}
 }
+
+
+/* Resident room modal + mobile readability pass */
+.resident-avatar{
+  position:absolute;
+  left:50%;
+  bottom:21%;
+  width:46px;
+  height:72px;
+  transform:translateX(-50%);
+  z-index:5;
+  filter:drop-shadow(5px 6px 0 #0004);
+}
+.resident-avatar span{position:absolute;display:block}
+.resident-avatar .player-shadow{width:42px;height:12px;left:2px;bottom:-4px;background:#0004;border-radius:50%}
+.resident-avatar .player-face{width:28px;height:24px;left:9px;top:15px;background:#e3b08b}
+.resident-avatar .player-hair{width:32px;height:17px;left:7px;top:7px;background:#29242d;z-index:2;box-shadow:6px 6px 0 #29242d}
+.resident-avatar .player-body{width:34px;height:28px;left:6px;top:38px;background:var(--resident);border-bottom:6px solid #312b35}
+.resident-avatar .player-legs{width:13px;height:12px;left:9px;top:64px;background:#292630;box-shadow:16px 0 #292630}
+.resident-avatar>b{
+  position:absolute;
+  left:50%;
+  top:80px;
+  transform:translateX(-50%);
+  white-space:nowrap;
+  background:#17151fe8;
+  border:1px solid #4b4553;
+  padding:4px 7px;
+  font-size:11px;
+}
+.empty-room-sign{
+  position:absolute;
+  left:50%;
+  top:53%;
+  transform:translate(-50%,-50%);
+  z-index:5;
+  width:min(260px,70%);
+  text-align:center;
+  background:#17151fe8;
+  border:1px solid #51485b;
+  padding:14px;
+}
+.empty-room-sign b,.empty-room-sign span{display:block}
+.empty-room-sign b{font-size:18px}
+.empty-room-sign span{font-size:12px;color:#b4acba;margin-top:5px;line-height:1.5}
+.resident-room-controls{
+  margin-top:10px;
+  border:1px solid var(--line);
+  background:#141219;
+  padding:12px;
+}
+.resident-room-controls label>small{
+  display:block;
+  color:var(--pink);
+  font-size:11px;
+  margin-bottom:7px;
+}
+.resident-room-controls select{
+  width:100%;
+  background:#28232e;
+  color:#fff;
+  border:1px solid #554a5e;
+  padding:11px;
+  font-size:13px;
+}
+.resident-room-controls p{
+  margin:9px 0 0;
+  color:#aaa2b1;
+  font-size:12px;
+  line-height:1.6;
+}
+
+@media(max-width:760px){
+  body{font-size:16px}
+  .resources span{min-width:50px;padding:6px 7px}
+  .resources small{font-size:9px}
+  .resources b{font-size:14px}
+
+  .scene-tabs button{font-size:13px;padding:9px 11px}
+  .scene-tabs button span{font-size:11px}
+  .scene-tabs button small{font-size:10px}
+
+  .world-title small{font-size:11px}
+  .world-title h2{font-size:24px}
+
+  .room-block b{font-size:11px;line-height:1.25}
+  .room-block small{font-size:9px;line-height:1.25}
+  .room-block.locked:after{font-size:11px;padding:6px}
+  .elevator b{font-size:12px}
+  .elevator span{font-size:10px}
+
+  .empty-world{width:58%;padding:13px}
+  .empty-world b{font-size:15px}
+  .empty-world span{font-size:11px;line-height:1.55}
+
+  .mobile-nav span{font-size:10px}
+  .mobile-nav b{font-size:15px}
+  .mobile-nav button{padding:11px 2px}
+
+  .page-head small{font-size:11px}
+  .page-head h2{font-size:24px}
+  .ticket-count{font-size:13px}
+  .pool-card small,.collect-card small,.setting-card small{font-size:11px}
+  .pool-card h3,.collect-card h3,.setting-card h3{font-size:18px}
+  .pool-card p,.collect-card p,.setting-card p{font-size:14px;line-height:1.65}
+  .pool-actions button,.collect-card button,.setting-card button,.task-list button,.npc-dialog button{font-size:13px}
+  .collection-tabs button{font-size:13px;padding:9px 14px}
+  .cg-card b{font-size:14px}
+  .cg-card small{font-size:11px}
+
+  .task-list article{gap:10px;padding:13px}
+  .task-main b{font-size:14px}
+  .task-main small{font-size:11px}
+  .history-box p{font-size:12px}
+  .history-box>small{font-size:11px}
+
+  .player-room-card{width:96vw;padding:12px}
+  .player-room-card>header small{font-size:11px}
+  .player-room-card>header h3{font-size:22px}
+  .player-room-info small{font-size:10px}
+  .player-room-info b{font-size:14px}
+  .player-room-card>p{font-size:13px;line-height:1.65}
+  .resident-room-controls label>small{font-size:12px}
+  .resident-room-controls select{font-size:14px;padding:12px}
+  .resident-room-controls p{font-size:13px}
+  .empty-room-sign b{font-size:20px}
+  .empty-room-sign span{font-size:13px}
+
+  .npc-dialog header small{font-size:11px}
+  .npc-dialog header h3{font-size:20px}
+  .npc-dialog header p{font-size:12px}
+  .dialog-lines b{font-size:10px}
+  .dialog-lines span{font-size:14px}
+  .npc-dialog input{font-size:14px}
+  .ai-badge{font-size:10px}
+  .toast{font-size:13px}
+}
